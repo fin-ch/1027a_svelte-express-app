@@ -9,27 +9,8 @@ app.use(cors());
 
 app.use(express.static("public"));
 
-app.get("/giphy", (req, res) => {
-    console.log(`Searching for a gif with the term: ${req.query.term}`);
-
-    let params = req.query.term.replace(/ /g, "+");
-    params += "&api_key=gTQNsDRaAvNlwgsnzTQwxaAAsDVVlf5z";
-    params += "&limit=10";
-
-    axios
-        .get(`https://api.giphy.com/v1/gifs/search?q=${params}`)
-        .then(function (response) {
-            res.send({
-                success: true,
-                data: response.data.data,
-            });
-        })
-        .catch(function (error) {
-            res.send({
-                success: false,
-                data: [],
-            });
-        });
+app.post("/", (req, res) => {
+    res.end();
 });
 
 app.get("*", (req, res) => {
