@@ -1,7 +1,7 @@
 <script>
 	export let name;
 
-	import Map from './Map.svelte';
+	import Map from './src/Map.svelte';
 	export let ready;
 </script>
 
