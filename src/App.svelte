@@ -1,8 +1,5 @@
 <script>
 	export let name;
-
-	import Map from './src/Map.svelte';
-	export let ready;
 </script>
 
 <svelte:head>
@@ -16,10 +13,6 @@
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 
 </main>
-
-{ #if ready }
-<Map></Map>
-{ /if }
 
 <style>
 	main {
