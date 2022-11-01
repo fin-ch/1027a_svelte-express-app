@@ -9,6 +9,7 @@
     },
     "devDependencies": {
         "@rollup/plugin-commonjs": "^17.0.0",
+        "@rollup/plugin-json": "^5.0.1",
         "@rollup/plugin-node-resolve": "^11.0.0",
         "rollup": "^2.3.4",
         "rollup-plugin-css-only": "^3.1.0",
@@ -22,6 +23,8 @@
         "cors": "^2.8.5",
         "express": "^4.18.2",
         "fs": "^0.0.1-security",
-        "sirv-cli": "^2.0.0"
+        "pm2": "^5.2.2",
+        "sirv-cli": "^2.0.0",
+        "svelte-json-tree": "^1.0.0"
     }
 }
